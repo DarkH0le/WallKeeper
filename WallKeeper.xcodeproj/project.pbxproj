@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E42C7A9E208ED58B00EA7CC1 /* Player.atlas in Resources */ = {isa = PBXBuildFile; fileRef = E42C7A9D208ED58B00EA7CC1 /* Player.atlas */; };
+		E42C7AD2208EE74E00EA7CC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E42C7AD1208EE74D00EA7CC1 /* Main.storyboard */; };
+		E430751B208FAFCF0008278E /* Bullet.sks in Resources */ = {isa = PBXBuildFile; fileRef = E430751A208FAFCF0008278E /* Bullet.sks */; };
+		E43325EE208FDB3D00BE4013 /* soundWall2.wav in Resources */ = {isa = PBXBuildFile; fileRef = E43325ED208FDB3D00BE4013 /* soundWall2.wav */; };
+		E43325F0208FDE2100BE4013 /* shootSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E43325EF208FDE2000BE4013 /* shootSound.mp3 */; };
+		E43325F2208FE59100BE4013 /* bgSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E43325F1208FE59100BE4013 /* bgSound.mp3 */; };
 		E46ECC12208E80260018BA2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46ECC11208E80260018BA2B /* AppDelegate.swift */; };
 		E46ECC14208E80260018BA2B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E46ECC13208E80260018BA2B /* GameScene.sks */; };
 		E46ECC16208E80260018BA2B /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E46ECC15208E80260018BA2B /* Actions.sks */; };
 		E46ECC18208E80260018BA2B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46ECC17208E80260018BA2B /* GameScene.swift */; };
 		E46ECC1A208E80260018BA2B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46ECC19208E80260018BA2B /* GameViewController.swift */; };
-		E46ECC1D208E80260018BA2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E46ECC1B208E80260018BA2B /* Main.storyboard */; };
 		E46ECC1F208E80280018BA2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E46ECC1E208E80280018BA2B /* Assets.xcassets */; };
 		E46ECC22208E80280018BA2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E46ECC20208E80280018BA2B /* LaunchScreen.storyboard */; };
 		E46ECC2D208E80280018BA2B /* WallKeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46ECC2C208E80280018BA2B /* WallKeeperTests.swift */; };
+		E46ECC3A208E9BA60018BA2B /* Ground.sks in Resources */ = {isa = PBXBuildFile; fileRef = E46ECC39208E9BA60018BA2B /* Ground.sks */; };
+		E4A9125C208F111900A70FDE /* Donald.atlas in Resources */ = {isa = PBXBuildFile; fileRef = E4A9125B208F111900A70FDE /* Donald.atlas */; };
+		E4FF49B1208FC3430019C8B9 /* Explotion.sks in Resources */ = {isa = PBXBuildFile; fileRef = E4FF49AF208FC3430019C8B9 /* Explotion.sks */; };
+		E4FF49B2208FC3430019C8B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4FF49B0208FC3430019C8B9 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,19 +38,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E42C7A9D208ED58B00EA7CC1 /* Player.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Player.atlas; sourceTree = "<group>"; };
+		E42C7AD1208EE74D00EA7CC1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E430751A208FAFCF0008278E /* Bullet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Bullet.sks; sourceTree = "<group>"; };
+		E43325ED208FDB3D00BE4013 /* soundWall2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = soundWall2.wav; sourceTree = "<group>"; };
+		E43325EF208FDE2000BE4013 /* shootSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shootSound.mp3; sourceTree = "<group>"; };
+		E43325F1208FE59100BE4013 /* bgSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgSound.mp3; sourceTree = "<group>"; };
 		E46ECC0E208E80260018BA2B /* WallKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E46ECC11208E80260018BA2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E46ECC13208E80260018BA2B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		E46ECC15208E80260018BA2B /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		E46ECC17208E80260018BA2B /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		E46ECC19208E80260018BA2B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		E46ECC1C208E80260018BA2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E46ECC1E208E80280018BA2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E46ECC21208E80280018BA2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E46ECC23208E80280018BA2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E46ECC28208E80280018BA2B /* WallKeeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallKeeperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E46ECC2C208E80280018BA2B /* WallKeeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallKeeperTests.swift; sourceTree = "<group>"; };
 		E46ECC2E208E80280018BA2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E46ECC39208E9BA60018BA2B /* Ground.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Ground.sks; sourceTree = "<group>"; };
+		E4A9125B208F111900A70FDE /* Donald.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Donald.atlas; sourceTree = "<group>"; };
+		E4FF49AF208FC3430019C8B9 /* Explotion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explotion.sks; sourceTree = "<group>"; };
+		E4FF49B0208FC3430019C8B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +80,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E4307517208F99750008278E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E46ECC13208E80260018BA2B /* GameScene.sks */,
+				E46ECC39208E9BA60018BA2B /* Ground.sks */,
+				E4307518208F998C0008278E /* PlayerScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E4307518208F998C0008278E /* PlayerScene */ = {
+			isa = PBXGroup;
+			children = (
+				E430751A208FAFCF0008278E /* Bullet.sks */,
+			);
+			path = PlayerScene;
+			sourceTree = "<group>";
+		};
 		E46ECC05208E80260018BA2B = {
 			isa = PBXGroup;
 			children = (
+				E4FF49AF208FC3430019C8B9 /* Explotion.sks */,
+				E4FF49B0208FC3430019C8B9 /* Assets.xcassets */,
+				E4A9125B208F111900A70FDE /* Donald.atlas */,
+				E42C7A9D208ED58B00EA7CC1 /* Player.atlas */,
 				E46ECC10208E80260018BA2B /* WallKeeper */,
 				E46ECC2B208E80280018BA2B /* WallKeeperTests */,
 				E46ECC0F208E80260018BA2B /* Products */,
@@ -83,15 +123,18 @@
 		E46ECC10208E80260018BA2B /* WallKeeper */ = {
 			isa = PBXGroup;
 			children = (
+				E4307517208F99750008278E /* Scenes */,
 				E46ECC11208E80260018BA2B /* AppDelegate.swift */,
-				E46ECC13208E80260018BA2B /* GameScene.sks */,
+				E42C7AD1208EE74D00EA7CC1 /* Main.storyboard */,
 				E46ECC15208E80260018BA2B /* Actions.sks */,
 				E46ECC17208E80260018BA2B /* GameScene.swift */,
 				E46ECC19208E80260018BA2B /* GameViewController.swift */,
-				E46ECC1B208E80260018BA2B /* Main.storyboard */,
 				E46ECC1E208E80280018BA2B /* Assets.xcassets */,
+				E43325ED208FDB3D00BE4013 /* soundWall2.wav */,
 				E46ECC20208E80280018BA2B /* LaunchScreen.storyboard */,
+				E43325F1208FE59100BE4013 /* bgSound.mp3 */,
 				E46ECC23208E80280018BA2B /* Info.plist */,
+				E43325EF208FDE2000BE4013 /* shootSound.mp3 */,
 			);
 			path = WallKeeper;
 			sourceTree = "<group>";
@@ -186,11 +229,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E46ECC1D208E80260018BA2B /* Main.storyboard in Resources */,
 				E46ECC14208E80260018BA2B /* GameScene.sks in Resources */,
+				E43325F2208FE59100BE4013 /* bgSound.mp3 in Resources */,
 				E46ECC1F208E80280018BA2B /* Assets.xcassets in Resources */,
+				E42C7AD2208EE74E00EA7CC1 /* Main.storyboard in Resources */,
+				E4A9125C208F111900A70FDE /* Donald.atlas in Resources */,
+				E430751B208FAFCF0008278E /* Bullet.sks in Resources */,
 				E46ECC22208E80280018BA2B /* LaunchScreen.storyboard in Resources */,
+				E4FF49B1208FC3430019C8B9 /* Explotion.sks in Resources */,
+				E46ECC3A208E9BA60018BA2B /* Ground.sks in Resources */,
+				E42C7A9E208ED58B00EA7CC1 /* Player.atlas in Resources */,
+				E43325EE208FDB3D00BE4013 /* soundWall2.wav in Resources */,
+				E4FF49B2208FC3430019C8B9 /* Assets.xcassets in Resources */,
 				E46ECC16208E80260018BA2B /* Actions.sks in Resources */,
+				E43325F0208FDE2100BE4013 /* shootSound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,14 +285,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E46ECC1B208E80260018BA2B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E46ECC1C208E80260018BA2B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E46ECC20208E80280018BA2B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
