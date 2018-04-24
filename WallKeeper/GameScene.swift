@@ -148,7 +148,7 @@ class GameScene: SKScene , SKPhysicsContactDelegate {
         //Physic body was set through the sks file
         player?.physicsBody?.categoryBitMask = playerCategory
         player?.physicsBody?.collisionBitMask = spicyEnemyCategory | pizzaEnemyCategory | groundCategory
-        player?.physicsBody?.contactTestBitMask = spicyEnemyCategory | pizzaEnemyCategory | trumpCategory
+        player?.physicsBody?.contactTestBitMask = spicyEnemyCategory | pizzaEnemyCategory | trumpCategory | gateCategory
         
         //Setting animation
         setPlayerAnimation()
@@ -172,16 +172,14 @@ class GameScene: SKScene , SKPhysicsContactDelegate {
         let bullet = scene.childNode(withName: "Bullet")
         bullet?.position = CGPoint(x: 0, y: 0)
         bullet?.move(toParent: self)
+        let wait = SKAction.wait(forDuration: 1.0)
+        let remove = SKAction.removeFromParent()
+        let sequence = SKAction.sequence([wait, remove])
+        bullet?.run(sequence)
         bullet?.physicsBody?.categoryBitMask = bulletCategory
         bullet?.physicsBody?.collisionBitMask = noCategory
         bullet?.position = (player?.position)!
         bullet?.physicsBody?.applyImpulse(CGVector(dx: 3000, dy: Int(2300 - hight * 5)))
-        
-        let scale = SKAction.wait(forDuration: 1.0)
-        let fade = SKAction.removeFromParent()
-        let sequence = SKAction.sequence([scale, fade])
-        
-        bullet?.run(sequence)
     }
     
     func spawnExplotion(_ givenPosition:CGPoint) -> Void {
@@ -249,18 +247,22 @@ class GameScene: SKScene , SKPhysicsContactDelegate {
         
         let otherCategory = other.physicsBody?.categoryBitMask
         
+        if otherCategory == gateCategory {
+            print("Bajar 50 vida gate, 20 trump, mas 30 puntos")
+            player?.physicsBody?.applyImpulse(CGVector(dx: 100, dy: 0))
+        }
         if otherCategory == trumpCategory {
             print("Bajar Vida Trump")
             spawnExplotion(other.position)
+            player?.physicsBody?.applyImpulse(CGVector(dx: -80, dy: 0))
             self.run(SKAction.playSoundFileNamed("soundWall2", waitForCompletion: false))
             
         } else if otherCategory == spicyEnemyCategory {
             print("Bajar 10 de vida jugador eliminar enemigo mas 5 puntos")
         } else if otherCategory == pizzaEnemyCategory {
             print("Bajar 15 vida jugador, eliminar enemigo, mas 10 puntos")
-        } else if otherCategory == gateCategory {
-            print("Bajar 50 vida gate, 20 trump, mas 30 puntos")
         }
+
     }
     
 //    func playerDidCollide(with other:SKNode) {
