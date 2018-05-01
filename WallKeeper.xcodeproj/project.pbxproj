@@ -130,10 +130,10 @@
 				E46ECC17208E80260018BA2B /* GameScene.swift */,
 				E46ECC19208E80260018BA2B /* GameViewController.swift */,
 				E46ECC1E208E80280018BA2B /* Assets.xcassets */,
-				E43325ED208FDB3D00BE4013 /* soundWall2.wav */,
 				E46ECC20208E80280018BA2B /* LaunchScreen.storyboard */,
-				E43325F1208FE59100BE4013 /* bgSound.mp3 */,
 				E46ECC23208E80280018BA2B /* Info.plist */,
+				E43325F1208FE59100BE4013 /* bgSound.mp3 */,
+				E43325ED208FDB3D00BE4013 /* soundWall2.wav */,
 				E43325EF208FDE2000BE4013 /* shootSound.mp3 */,
 			);
 			path = WallKeeper;

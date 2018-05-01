@@ -17,6 +17,8 @@ class GameScene: SKScene , SKPhysicsContactDelegate {
     var playerTextureAtlas = SKTextureAtlas()
     var playerTextureArray = [SKTexture]()
     var playerAnimation:SKAction?
+    var healthPlayer:SKLabelNode?
+    var score:SKLabelNode?
     
     // Trump Ref
     var trump:SKSpriteNode?
@@ -172,10 +174,14 @@ class GameScene: SKScene , SKPhysicsContactDelegate {
         let bullet = scene.childNode(withName: "Bullet")
         bullet?.position = CGPoint(x: 0, y: 0)
         bullet?.move(toParent: self)
+        
         let wait = SKAction.wait(forDuration: 1.0)
+        bullet?.run(wait)
         let remove = SKAction.removeFromParent()
-        let sequence = SKAction.sequence([wait, remove])
-        bullet?.run(sequence)
+        bullet?.run(remove)
+        //let sequence = SKAction.sequence([wait, remove])
+        
+        
         bullet?.physicsBody?.categoryBitMask = bulletCategory
         bullet?.physicsBody?.collisionBitMask = noCategory
         bullet?.position = (player?.position)!
